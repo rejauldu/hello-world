@@ -13,7 +13,7 @@ class MessageServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        require __DIR__.'/routes/web.php';
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
     }
 
     /**
